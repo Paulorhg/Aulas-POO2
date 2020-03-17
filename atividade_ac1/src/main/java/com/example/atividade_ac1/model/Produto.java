@@ -5,23 +5,23 @@ package com.example.atividade_ac1.model;
  */
 public class Produto {
 
-    private int codigo;
+    private Integer codigo;
     private String nome;
     private Double valor;
-    private int estoque;
+    private Integer estoque;
 
-    public Produto(int codigo, String nome, Double valor, int estoque) {
+    public Produto(Integer codigo, String nome, Double valor, Integer estoque) {
         this.codigo = codigo;
         this.nome = nome;
         this.valor = valor;
         this.estoque = estoque;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -41,11 +41,11 @@ public class Produto {
         this.valor = valor;
     }
 
-    public int getEstoque() {
+    public Integer getEstoque() {
         return estoque;
     }
 
-    public void setEstoque(int estoque) {
+    public void setEstoque(Integer estoque) {
         this.estoque = estoque;
     }
 

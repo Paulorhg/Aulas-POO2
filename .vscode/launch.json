@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<atividade_ac1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.atividade_ac1.DemoApplication",
+            "projectName": "atividade_ac1",
+            "args": ""
+        }
+    ]
+}
