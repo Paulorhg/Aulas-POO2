@@ -35,13 +35,20 @@ public class ProdutoController {
 
     @GetMapping("/produto/{id}")
     public ModelAndView getProdutoById(@PathVariable("id") Integer id){
-        ModelAndView mv = new ModelAndView("produtoView");
-        Produto produto;
-            produto = ps.getProduto(id);
+        ModelAndView mv;
+        Produto produto = ps.getProduto(id);
+        
+            if(produto != null){
+                mv = new ModelAndView("produtoView");
 
-        mv.addObject("produto", produto);
+                mv.addObject("produto", produto);
 
-        return mv;
+            }
+            else{
+                mv = new ModelAndView("errorView");
+            }
+            
+            return mv;
     }
 
     @GetMapping("/produtosEmEstoque")
@@ -77,12 +84,4 @@ public class ProdutoController {
 
         return mv;
     }
-
-    /*
-    @ExceptionHandler()
-    public String error(){
-
-        return "errorView";
-    }
-    */
 }
