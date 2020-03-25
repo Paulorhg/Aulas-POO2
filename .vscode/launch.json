@@ -9,6 +9,16 @@
             "mainClass": "com.example.atividade_ac1.DemoApplication",
             "projectName": "atividade_ac1",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<atividade_30_03_2020>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.atividade_30_03_2020.DemoApplication",
+            "projectName": "atividade_30_03_2020",
+            "args": ""
         }
     ]
 }
