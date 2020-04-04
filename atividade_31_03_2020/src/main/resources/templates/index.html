@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livro</title>
+    <style>
+        form{
+            width: 180px;
+        }
+        input{
+            margin-bottom: 5px;
+        }
+        td{
+            padding-right: 15px;
+        }
+        
+    </style>
 </head>
 <body>
     <h2>Inserir novo livro</h2>
@@ -17,7 +29,16 @@
         <input type="Submit" placeholder="Enviar" >
     </form>
 
+    <h2>Livros cadastrados</h2>
+    
     <table>
+        <tr style="font-weight: bold;">
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Autor</td>
+            <td>Categoria</td>
+            <td>Ano Lançamento</td>
+        </tr>
         <tr th:each="livro: ${livros}">
             <td th:text="${livro.id}"></td>
             <td th:text="${livro.nome}"></td>
