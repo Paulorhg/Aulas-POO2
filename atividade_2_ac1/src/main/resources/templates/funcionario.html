@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionarios</title>
+</head>
+<body>
+    <h2>Cadastrar novos funcionarios</h2>
+    <br><br>
+    <h2>Funcionarios Cadastrados</h2>
+    <table>
+        <tr th:each="funcionario : ${funcionarios}">
+            <td th:text="${funcionario.id}"></td>
+            <td th:text="${funcionario.nome}"></td>
+            <td th:text="${funcionario.funcao}"></td>
+            <td th:text="${funcionario.salario}"></td>
+            <td th:text="${funcionario.anoAdmissao}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
