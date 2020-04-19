@@ -17,4 +17,8 @@ public class FuncionarioService {
     public List<Funcionario> getFuncionarios(){
         return fr.findAll();
     }
+
+    public void Salvar(Funcionario func){
+        fr.save(func);
+    }
 }
